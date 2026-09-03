@@ -1,0 +1,25 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[manifest]
+members = [
+    "cs118-hw2-lib",
+    "homework2-cadenfinkelstein",
+]
+
+[[package]]
+name = "cs118-hw2-lib"
+version = "0.1.0"
+source = { editable = "lib" }
+
+[[package]]
+name = "homework2-cadenfinkelstein"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "cs118-hw2-lib" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "cs118-hw2-lib", editable = "lib" }]
