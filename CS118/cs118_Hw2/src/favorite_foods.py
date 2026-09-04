@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 
-from lib.strings import check_has_special_chars
-from lib.types import FavList
+from data import favorite_foods
+from lib import question
 
 # Just type declarations because why not, lol
 type FavoriteFoods = int
@@ -24,16 +24,21 @@ def init_state() -> InitState:
     return InitState()
 
 
-def favorite_foods() -> FavoriteFoods:
-    state: InitState = init_state()
+def ask() -> FavoriteFoods:
+    state: InitState = init_state()  # Cosplaying React fr
     while True:
-        state.input.tmp = input("Enter your favorite food:")
+        state.input.tmp = str(
+            input(f"{question.delimiter}What is your favorite food? ")
+        )
         state.input.tmp_len = len(state.input.tmp)
         state.input.list.append(state.input.tmp)
-        if state.input.tmp_len <= 0 or not check_has_special_chars(state.input.tmp):
-            print(rf"Input '{state.input.tmp}' is invalid.")
-            print("Stupid...")
+        if state.input.tmp_len <= 0:
+            print(f"\x1b[1;31mInput '{state.input.tmp}' is invalid.\x1b[0m")
+            print("Stupid...")  # Necessary user discipline
             break
         if state.input.tmp:
             break
+        # I could have made the modification of the list better, but it is unnecessary for this.
+        favorite_foods[1] = "steak"
+        print(f"{favorite_foods!s}")
     return 0
