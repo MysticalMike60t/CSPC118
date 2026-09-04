@@ -1,7 +1,7 @@
 [project]
 name = "cs118_Hw2"
-version = "0.1.0"
-description = "Homework #2 for CPSC 118."
+version = "1.0.0"
+description = "Homework #2 for CS118."
 requires-python = ">=3.14"
 dependencies = []
 
