@@ -25,7 +25,7 @@ def init_state() -> InitState:
 
 
 def ask() -> FavoriteFoods:
-    state: InitState = init_state()  # Cosplaying React fr
+    state: InitState = init_state()  # Cos-playing React fr
     while True:
         state.input.tmp = str(
             input(f"{question.delimiter}What is your favorite food? ")

@@ -3,7 +3,6 @@
 # This uses some 256-bit colors.
 
 import sys
-from html import escape
 
 # I namespaced these for readability since direct calls were too generic.
 import favorite_foods
