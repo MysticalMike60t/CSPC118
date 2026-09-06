@@ -7,3 +7,4 @@ out/
 *.tmp
 *.log
 __pycache__/
+.git/
