@@ -1,5 +1,5 @@
 [project]
-name = "cspc118-ice3"
+name = "cspc118-ice4"
 version = "1.0.0"
 description = "In Class Exercise 9/4"
 readme = "README.md"
@@ -10,7 +10,7 @@ requires-python = ">=3.14"
 dependencies = []
 
 [project.scripts]
-cspc118_ice3 = "src:main"
+cspc118_ice4 = "src:main"
 
 [build-system]
 requires = ["hatchling"]
