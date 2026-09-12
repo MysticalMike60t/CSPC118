@@ -8,3 +8,6 @@ out/
 *.log
 __pycache__/
 .git/
+*.zip
+*.tar.*
+*.7z
