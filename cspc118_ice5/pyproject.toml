@@ -1,8 +1,11 @@
 [project]
 name = "cspc118-ice5"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "In Class Exercise 9/10"
 readme = "README.md"
+authors = [
+    { name = "Caden Finkelstein", email = "me@cadenf.com" }
+]
 requires-python = ">=3.14"
 dependencies = []
 
