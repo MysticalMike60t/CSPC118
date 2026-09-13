@@ -1,12 +1,13 @@
 [project]
-name = "cspc118_Hw2"
+name = "cspc118_hw1"
 version = "1.0.0"
-description = "Homework #2 for CS118."
+description = "Homework #1"
+readme = "README.md"
 requires-python = ">=3.14"
 dependencies = []
 
 [project.scripts]
-cs118_Hw2 = "main:main"
+cspc118_hw1 = "src:main"
 
 [build-system]
 requires = ["hatchling"]
