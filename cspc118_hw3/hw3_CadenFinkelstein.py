@@ -41,7 +41,7 @@ def main() -> int:
     # Part 3
     sep(3)
     web_vis = [25, 60, 10, 15, 16, 34, 50]
-    print(f"The website has been online {len(web_vis) + 1} days.")
+    print(f"The website has been online {len(web_vis)} days.")
     print(f"There were {min(web_vis)} visitors on our slowest day.")
     print(f"There were {max(web_vis)} visitors on our busiest day.")
 
